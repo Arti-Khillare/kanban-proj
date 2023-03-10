@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kanban Board</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="drag.js" defer></script>
+	<script src="todo.js" defer></script>
+</head>
+<body>
+	<h1>Kanban Board</h1>
+	<div class="board">
+		<form id="todo-form">
+			<input type="text" placeholder="Add new task" id="todo-input" />
+			<button type="submit">Add + </button>
+		</form>
+		<div class="lanes"> 
+			<div class="swim-lane" id="todo-lane">
+				<h3 class="heading">Todo</h3>
+				<p class="task" draggable="true">Assignment1</p>
+				<p class="task" draggable="true">Assignment2</p>
+				<p class="task" draggable="true">Assignment3</p>
+			</div>
+			<div class="swim-lane" >
+				<h3 class="heading">Pending</h3>
+				<p class="task" draggable="true">Assignment4</p>
+			</div>
+			<div class="swim-lane" >
+				<h3 class="heading">Done</h3>
+				<p class="task" draggable="true">Assignment5</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html> 
+
